@@ -2350,7 +2350,9 @@ create table publishing_pushed_assets(
 	asset_id varchar(36) NOT NULL,
 	asset_type varchar(255) NOT NULL,
 	push_date TIMESTAMP,
-	environment_id varchar(36) NOT NULL
+	environment_id varchar(36) NOT NULL,
+	endpoint_ids text,
+	publisher text
 );
 
 CREATE INDEX idx_pushed_assets_1 ON publishing_pushed_assets (bundle_id);
@@ -2462,3 +2464,7 @@ CREATE TABLE system_event (
 );
 ALTER TABLE system_event ADD CONSTRAINT PK_system_event PRIMARY KEY (identifier);
 CREATE INDEX idx_system_event ON system_event (created);
+
+--Content Types improvement
+CREATE INDEX idx_lower_structure_name ON structure (LOWER(velocity_var_name));
+

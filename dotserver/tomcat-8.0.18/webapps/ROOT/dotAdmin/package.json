@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "dotcms-ui@4.1.0",
+        "scope": null,
+        "escapedName": "dotcms-ui",
+        "name": "dotcms-ui",
+        "rawSpec": "4.1.0",
+        "spec": "4.1.0",
+        "type": "version"
+      },
+      "/opt/dotcms/tmp/jgamba/core-release-4.1/dotCMS"
+    ]
+  ],
+  "_from": "dotcms-ui@4.1.0",
+  "_id": "dotcms-ui@4.1.0",
+  "_inCache": true,
+  "_location": "/dotcms-ui",
+  "_nodeVersion": "7.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/dotcms-ui-4.1.0.tgz_1496188983979_0.43401694972999394"
+  },
+  "_npmUser": {
+    "name": "dotcms",
+    "email": "dev@dotcms.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "dotcms-ui@4.1.0",
+    "scope": null,
+    "escapedName": "dotcms-ui",
+    "name": "dotcms-ui",
+    "rawSpec": "4.1.0",
+    "spec": "4.1.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/dotcms-ui/-/dotcms-ui-4.1.0.tgz",
+  "_shasum": "dd1bd98ef2cf38136caf1efd2bb3f4a459297a90",
+  "_shrinkwrap": null,
+  "_spec": "dotcms-ui@4.1.0",
+  "_where": "/opt/dotcms/tmp/jgamba/core-release-4.1/dotCMS",
+  "author": {
+    "name": "dotCMS"
+  },
+  "bugs": {
+    "url": "https://github.com/dotcms/core-web/issues"
+  },
+  "dependencies": {},
+  "description": "DotCMS UI Angular App",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "dd1bd98ef2cf38136caf1efd2bb3f4a459297a90",
+    "tarball": "https://registry.npmjs.org/dotcms-ui/-/dotcms-ui-4.1.0.tgz"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
+  },
+  "homepage": "https://github.com/dotcms/core-web#readme",
+  "license": "GPL 3",
+  "maintainers": [
+    {
+      "name": "dotcms",
+      "email": "dev@dotcms.com"
+    }
+  ],
+  "name": "dotcms-ui",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotcms/core-web.git"
+  },
+  "scripts": {},
+  "version": "4.1.0"
+}

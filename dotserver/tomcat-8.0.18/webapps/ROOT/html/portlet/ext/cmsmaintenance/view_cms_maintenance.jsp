@@ -10,7 +10,6 @@
 <%@page import="java.lang.management.RuntimeMXBean"%>
 <%@page import="java.lang.management.ManagementFactory"%>
 <%@page import="com.dotmarketing.business.ChainableCacheAdministratorImpl"%>
-<%@page import="com.dotmarketing.business.cache.provider.h2.H2CacheLoader"%>
 <%@page import="com.dotmarketing.business.CacheLocator"%>
 <%@ page import="java.util.Calendar"%>
 <%@ page import="com.dotcms.repackage.javax.portlet.WindowState"%>
@@ -398,14 +397,7 @@ function refreshCache(){
 	var y =Math.floor(Math.random()*1123213213);
 
 	<%if(CacheLocator.getCacheAdministrator().getImplementationClass().equals(ChainableCacheAdministratorImpl.class)){%>
-		if(dijit.byId("showSize").checked){
-			x.attr( "href","/html/portlet/ext/cmsmaintenance/cachestats_guava.jsp?showSize=true&r=" + y  );
-
-		}
-		else{
-			x.attr( "href","/html/portlet/ext/cmsmaintenance/cachestats_guava.jsp?r=" + y  );
-
-		}
+		x.attr( "href","/html/portlet/ext/cmsmaintenance/cachestats_guava.jsp?r=" + y  );
 	<%}else{%>
 		x.attr( "href","/html/portlet/ext/cmsmaintenance/cachestats.jsp?r=" + y  );
 	<%}%>
@@ -1330,14 +1322,11 @@ dd.leftdl {
                 <tr>
                     <td colspan="3">
                         <div class="buttonRow" style="text-align: right">
-                        <label for="showSize">
-                        <%= LanguageUtil.get(pageContext,"Show-Memory-Size") %>: <input type="checkbox" value="true" dojoType="dijit.form.CheckBox" name="showSize" id="showSize" />
-                        </label>
                         <button dojoType="dijit.form.Button"  onClick="refreshCache()" iconClass="resetIcon">
                            <%= LanguageUtil.get(pageContext,"Refresh-Stats") %>
                         </button>
                         </div>
-                        <div id="cacheStatsCp" dojoType="dijit.layout.ContentPane" style="text-align: center;min-height: 100px;">
+                        <div id="cacheStatsCp" dojoType="dojox.layout.ContentPane" parseOnLoad="true" style="text-align: center;min-height: 100px;">
 
 
                             <div style="padding-bottom:30px;">
@@ -1898,9 +1887,8 @@ dd.leftdl {
 		</div>
 <!--         <ol class="orderMe" id="threadList"></ol> -->
         <ol class="orderMe" id="threadStats"></ol>
-        <div  id="threadList" style="margin-top:10px; width:98%;height:500px;overflow:auto; margin-left:auto; margin-right:auto; border:1px solid #C0C0C0;"></div>
-<!--         <textarea class="tailerBody" style="width:98%; height: 800px;  display: block; margin-left: auto; margin-right: auto;" name="contentIdsList" id="threadList"></textarea> -->
-        <img style="display:none;" id="threadProgress" src="/html/images/icons/round-progress-bar.gif"/>
+        <div  id="threadList" style="margin-top:10px; width:98%;min-height:500px;overflow:visible; ; margin-left:auto; margin-right:auto; border:1px solid #C0C0C0;"></div>
+    	<img style="display:none;" id="threadProgress" src="/html/images/icons/round-progress-bar.gif"/>
     </div>
 
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
