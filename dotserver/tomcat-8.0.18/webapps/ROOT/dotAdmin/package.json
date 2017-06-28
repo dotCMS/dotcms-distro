@@ -10,7 +10,7 @@
         "spec": "4.1.0",
         "type": "version"
       },
-      "/opt/dotcms/tmp/jgamba/core-release-4.1/dotCMS"
+      "/opt/dotcms/tmp/jgamba/core-release-4.1.1/dotCMS"
     ]
   ],
   "_from": "dotcms-ui@4.1.0",
@@ -44,7 +44,7 @@
   "_shasum": "dd1bd98ef2cf38136caf1efd2bb3f4a459297a90",
   "_shrinkwrap": null,
   "_spec": "dotcms-ui@4.1.0",
-  "_where": "/opt/dotcms/tmp/jgamba/core-release-4.1/dotCMS",
+  "_where": "/opt/dotcms/tmp/jgamba/core-release-4.1.1/dotCMS",
   "author": {
     "name": "dotCMS"
   },
